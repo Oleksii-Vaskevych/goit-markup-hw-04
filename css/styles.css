@@ -76,7 +76,7 @@ ul {
 }
 
 .page-header {
-  width: 1600px;
+  max-width: 1600px;
 
   border-bottom: 1px solid #ececec;
 }
@@ -147,6 +147,7 @@ a.link {
 }
 
 .site-contacts .item {
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -186,8 +187,19 @@ img {
 
 .section-hero.section {
   max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #c4c4c4;
 }
 
 .section-hero {
@@ -281,6 +293,21 @@ button {
 
 /* .item-list {} */
 
+/* .item-list::before {
+  display: block;
+  content: "";
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
 .title-item-list {
   font-weight: 700;
   font-size: 14px;
@@ -291,6 +318,18 @@ button {
   color: var(--primari-tex-color);
 
   margin-bottom: 10px;
+}
+
+.icon-features {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
 }
 
 .features-items-text {
@@ -400,6 +439,8 @@ button {
   letter-spacing: 0.03em;
 
   color: var(--paragraph-tex);
+
+  margin-bottom: 16px;
 }
 
 /*------------- PAGES 2 PORTFOLIO -------------*/
@@ -508,6 +549,17 @@ button {
 
   color: var(--paragraph-tex);
 }
+/*------------- НАШІ КЛІЄНТИ -------------*/
+.section-clients {
+  max-width: 1600px;
+  display: block;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
 
 /*------------- FOOTER -------------*/
 
@@ -519,7 +571,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  width: 1600px;
+  max-width: 1600px;
   background-color: #2f303a;
 }
 
@@ -596,3 +648,27 @@ address {
 /* .address-container {
 
 } */
+
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-icon-join {
+  display: flex;
+
+}
+
+.icon-tel {
+  fill: #188ce8;
+}
+
+.icon-tel:hover {
+  fill: aqua;
+}
+
