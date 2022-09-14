@@ -650,6 +650,8 @@ address {
 
 .footer-items .container {
   display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .address-items {
@@ -705,11 +707,6 @@ address {
   margin: -1px;
 }
 
-.footer-items .container {
-  display: flex;
-  flex-direction: column;
-}
-
 .logo-footer {
   display: flex;
   margin-bottom: 20px;
@@ -724,6 +721,7 @@ address {
 
 .address-container {
   display: flex;
+  flex-direction: column;
 }
 
 .join-title {
@@ -752,6 +750,10 @@ address {
   fill: #afb1b8;
 }
 
+.linc-icon.bot {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .social-icon {
   fill: inherit;
 }
@@ -776,12 +778,12 @@ address {
 .social-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  margin-left: 70px;
 }
 
 .footer-social-icon-list {
   display: flex;
+  padding: 0;
 }
 
 .footer-social-title {
